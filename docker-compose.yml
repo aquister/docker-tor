@@ -1,0 +1,14 @@
+tor:
+    build: .
+    environment:
+        - TZ=Europe/Berlin"
+    links:
+        - webserver
+    ports:
+        - "80:80"
+#       - "9050:9050"
+
+webserver:
+    image: httpd:2.4
+    volumes:
+        - "/var/www/html/:/usr/local/apache2/htdocs/"

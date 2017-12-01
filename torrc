@@ -1,0 +1,18 @@
+Log notice stdout
+SafeLogging 0
+
+SocksPort 127.0.0.1:9050
+
+ControlPort 9051
+CookieAuthentication 1
+
+#VirtualAddrNetworkIPv4 172.16.0.0/12
+#DNSPort auto
+#AutomapHostsOnResolve 1
+
+#SocksPort 0
+HiddenServiceDir /tmp/hidden_service/
+HiddenServicePort 80 webserver:80
+HiddenServiceVersion 3
+#HiddenServiceSingleHopMode 1
+#HiddenServiceNonAnonymousMode 1
